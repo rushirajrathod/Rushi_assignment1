@@ -1,3 +1,13 @@
+## Screenshots  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a442d68e-28ed-47bd-aa6c-3910077acf52" alt="Main Screen" width="250"/>
+  <img src="https://github.com/user-attachments/assets/d727d19e-74b0-429a-8583-1a0e02859f56" alt="Budget Section" width="250"/>
+  <img src="https://github.com/user-attachments/assets/ead52252-746c-4162-94c1-d72fbc41ef8a" alt="Expenses Screen" width="250"/>
+</p>
+
+---
+
 # SOFE 4640U: Mobile Application Development
 
 ## 1. Introduction
@@ -32,12 +42,6 @@ The **Budgetly** application helps to plan your finances. It combines structured
 
 This project gave me hands-on experience with Android Studio and Kotlin, and helped me understand how layouts, views, and intents all fit together in a real application.  
 
----
 
-## Screenshots  
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a442d68e-28ed-47bd-aa6c-3910077acf52" alt="Main Screen" width="250"/>
-  <img src="https://github.com/user-attachments/assets/d727d19e-74b0-429a-8583-1a0e02859f56" alt="Budget Section" width="250"/>
-  <img src="https://github.com/user-attachments/assets/ead52252-746c-4162-94c1-d72fbc41ef8a" alt="Expenses Screen" width="250"/>
-</p>
+
