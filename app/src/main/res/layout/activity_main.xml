@@ -15,7 +15,7 @@
         <!-- App Title -->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTitle"
-            android:text="EMI Budget Buddy"
+            android:text="Budgetly"
             android:textStyle="bold"
             android:textColor="@color/brandYellow"
             android:textSize="22sp"
