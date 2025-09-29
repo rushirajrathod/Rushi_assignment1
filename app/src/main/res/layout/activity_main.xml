@@ -6,11 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Root container with scroll support to handle smaller screens -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- App Title -->
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTitle"
             android:text="EMI Budget Buddy"
@@ -23,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Card 1: Mortgage Inputs -->
+        <!-- Card 1: Mortgage calculation section -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardMortgage"
             android:layout_marginTop="12dp"
@@ -42,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!-- Section label -->
                 <com.google.android.material.textview.MaterialTextView
                     android:text="Mortgage"
                     android:textStyle="bold"
@@ -50,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
+                <!-- Loan amount input -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilLoan"
                     android:hint="Loan Amount ($)"
@@ -65,6 +69,7 @@
                         android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Interest rate input -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilRate"
                     android:hint="Interest Rate (% / year)"
@@ -80,6 +85,7 @@
                         android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Loan tenure input -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilYears"
                     android:hint="Tenure (years)"
@@ -95,6 +101,7 @@
                         android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Button to calculate EMI -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnCalcEmi"
                     android:text="Calculate EMI"
@@ -102,6 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
+                <!-- Result display for EMI -->
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvEmi"
                     android:text="EMI: $0.00"
@@ -114,7 +122,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card 2: Monthly Budget -->
+        <!-- Card 2: Monthly budget section -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardBudget"
             android:layout_marginTop="12dp"
@@ -133,6 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!-- Section label -->
                 <com.google.android.material.textview.MaterialTextView
                     android:text="Monthly Budget"
                     android:textStyle="bold"
@@ -141,6 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
+                <!-- Monthly income input -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilIncome"
                     android:hint="Monthly Income ($)"
@@ -156,6 +166,7 @@
                         android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Monthly expenses input -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilExpenses"
                     android:hint="Monthly Expenses ($)"
@@ -171,7 +182,7 @@
                         android:layout_height="wrap_content"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-
+                <!-- Explicit intent: open detailed expenses screen -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnManageExpenses"
                     android:text="Add more Expenses"
@@ -179,6 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
+                <!-- Button to calculate savings or deficit -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnComputeBudget"
                     android:text="Compute Savings / Deficit"
@@ -186,6 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
+                <!-- Result display for savings/deficit -->
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tvBudget"
                     android:text="Result: $0.00 (Savings)"
@@ -195,8 +208,6 @@
                     android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-
-
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

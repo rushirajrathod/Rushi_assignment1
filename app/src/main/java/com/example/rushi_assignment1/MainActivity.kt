@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // calculating the emi
     private fun calcEmi() {
         val p = num(b.etLoan.text?.toString())
         val annualRate = num(b.etRate.text?.toString())
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         b.tvEmi.text = "EMI: $%.2f".format(emi)
     }
 
+    // calculating the budget
     private fun computeBudget() {
         val income = num(b.etIncome.text?.toString())
         val expenses = num(b.etExpenses.text?.toString())
