@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Rushi_assignment1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+    <!-- Dark theme with yellow primary -->
+    <style name="Theme.Rushi_assignment1" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color drives button/active control color -->
+        <item name="colorPrimary">@color/brandYellow</item>
+        <item name="colorOnPrimary">@color/pureBlack</item>
 
-    <style name="Theme.Rushi_assignment1" parent="Base.Theme.Rushi_assignment1" />
+        <!-- Surfaces / Backgrounds -->
+        <item name="colorSurface">@color/nearBlack</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <!-- Secondary/outline just to keep inputs readable -->
+        <item name="colorSecondary">@color/brandYellowDark</item>
+        <item name="colorOnSecondary">@color/pureBlack</item>
+        <item name="colorOutline">@color/mutedText</item>
+
+        <!-- Text fields & buttons get Material defaults based on the above -->
+        <item name="android:statusBarColor">@color/pureBlack</item>
+        <item name="android:navigationBarColor">@color/pureBlack</item>
+    </style>
 </resources>

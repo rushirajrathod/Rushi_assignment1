@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+<!-- Brand palette -->
+<color name="brandYellow">#FACC15</color>   <!-- warm yellow -->
+<color name="brandYellowDark">#EAB308</color>
+<color name="pureBlack">#000000</color>
+<color name="nearBlack">#111111</color>
+<color name="white">#FFFFFF</color>
+<color name="mutedText">#C7C7C7</color>
 </resources>
